@@ -2009,6 +2009,18 @@ AWS definition: "Amazon Simple Queue Service (SQS) is a fully managed message qu
 Learn more about it [here](https://aws.amazon.com/sqs)
 </b></details>
 
+## Other ref Q/A
+ Q:  You have been assigned to design a VPC architecture for a 2 tier application. The application needs to be highly available and scalable. How would you design the VPC architecture?
+
+ Ans: We need a multiple availability zones, ec2 will place in us east 1a and us east 1b or any two availability zones to that  even if one goes down there is another availability zones that is taking care of the the request, coming to about  scalability it is better to do it with auto scaling groups, if the number of request go high auto scaling group can immediately scale your instances and say that ok thre is no problem you can handle the load
+   
+I would create 2 subnets: public and private. The public subnet would contain the load balancers and be accessible from the  internet. The private subnet would host the application servers.
+   
+I would distribute the subnets across multiple available zones for high availability. Additionally, I would configure auto scaling gorups for the appliition servers
+
+
+
+
 ## Network
 
 
