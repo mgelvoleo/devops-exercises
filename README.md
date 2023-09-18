@@ -494,6 +494,37 @@ GitLab: "GitOps is an operational framework that takes DevOps best practices use
 Read more [here](https://about.gitlab.com/topics/gitops)
 </b></details>
 
+
+
+### Other Q/A CI/CD
+Q1: Explain your current CI/CD Setup.
+
+Ther are many CI tools, i  will consider Jenkins to answer this. 
+
+CICD is a process of continues intergration and continious delivery. In the current organication, we use GitHub as a source code repository. We have configured a Github webhook that triggers a Jenkins Pipeline on every commit, The Jenkins pipeline is setup  wit multiple stages.
+
+1.  Build Stage - Take care of static code analysis. Unitest testing and build.
+2. Test Stage - Running smoke and function tests.
+3. Deploy Stage - Push aritifacts to the registry, prepare deployment manifests and deploy on the cluster.
+
+Q2: Secrets exist throughout the delivery lifecycle as application secrets, credentials, and other sensitive info should be secured, obfuscated, and governed.
+
+1. Code repo like GitHub, GitLab, and BitBucket.
+2. Continuous Integration servers and Continous Delivery platforms -  jenkins, bamboo, jfrog, teamCity
+3. Cloud Providers and Container Platform - AWS, GCP, Azure, K8 (as keys, configuration files, and other info)
+4. Infra - (SSH keys, load balancer credentials).
+
+Tools: Hashicorp Vault, aws sys maanger, Azure Vult
+
+Q3: What is your Deployment Strategy?
+
+
+Q5: Jenkins Setup, Backup and Scaling up?
+
+
+
+
+
 #### SRE
 
 <details>
