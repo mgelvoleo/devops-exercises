@@ -6262,6 +6262,51 @@ You can learn more [here](https://submariner-io.github.io)
 <summary>What is Istio? What is it used for?</summary><br><b>
 </b></details>
 
+### Other Q/A from Kubernetes
+
+Q: What is the diffrence docker and kubernetes
+A: docker is a container platform where as kubernetes is container orchestration env. that offers capabiliites like auto healing,
+auto scaling, clustering and entreprise level support like Lod balancing
+
+Q: What  are the main components of kubernetes architecture.
+
+A: Control Plane (API Server, scheduler, controller manager, ccm, ectd)
+Data plane(kubelet, kube-proxy, container runtime)
+
+Q: What are the main differences between the docker swarm and kubernetes?
+A: Docker swarm is only suited for small scale while k8 is better suited for large organization as it offer more scalability,
+networking capabilities like policy and huge 3rd party ecosystem support
+
+Q: What is the difference between docker container and a k8 pod?
+
+A: a pod in kubernetes is a runtime specification of a container in docker. A pod provindes more delacrative way of defining
+using YML and you ca run more than one container in a pod.
+
+Q: What is a namespace in kubernetes ?
+
+A: Namespace is logical	 isolation of resources, network, policies,rbac and everything.
+
+Q: What is the role of kube proxy?
+A: kube-proxy works by maintaining a set of network rules on each node in the cluster, which are updated dynamically as services are added or removed. When a client sends a request to a service, the requiest is intercepted by kube-proxy on the node where it was recived.
+
+Q: What are the different types of services within kubernetes?
+A: cluster IP mode, node port mode, load balancer mode
+
+Q: What is the difference loadbalancer and node port
+A:
+
+Q: What is the role of kubelet?
+A: kubelet manages the containers that are scheduled to run on that node. it ensure that the containers are running and healty and that the resources they need are available.
+
+Q: Day to day activities on kubernetes.
+A: Maintance activity
+
+
+
+
+
+
+
 ## Programming
 
 <details>
