@@ -2529,7 +2529,7 @@ For example:
 <details>
 <summary>Explain what each of the following commands does and give an example on how to use it:
 
-  * touch
+  * touch - 
   * ls
   * rm
   * cat
@@ -8893,7 +8893,31 @@ Most of the time we would actually want the opposite to happen. In order to make
   * <code>echo $?</code>
   * <code>echo $$</code>
   * <code>echo $@</code>
-  * <code>echo $#</code></summary><br><b>
+  * <code>echo $#</code>
+  
+  echo $0:
+
+Description: This command prints the name of the script or shell.
+Result: If you run this command within a script, it will print the name of the script. If you run it directly in the terminal, it will print the name of the shell you're using (e.g., bash, sh).
+echo $?:
+
+Description: This command prints the exit status of the last executed command.
+Result: It will output 0 if the last command was successful. If the last command failed, it will output a non-zero value, which represents the error code.
+echo $$:
+
+Description: This command prints the process ID (PID) of the current shell.
+Result: It will output the PID of the shell in which the command is executed.
+echo $@:
+
+Description: This command prints all the positional parameters (arguments) passed to the script.
+Result: If you run this command within a script, it will print all the arguments passed to the script separated by spaces. If no arguments are passed, it will output nothing.
+echo $#:
+
+Description: This command prints the number of positional parameters (arguments) passed to the script.
+Result: It will output a number indicating how many arguments were passed to the script. If no arguments were passed, it will output 0
+  
+  
+  </summary><br><b>
 </b></details>
 
 <details>
