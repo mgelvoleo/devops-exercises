@@ -9335,6 +9335,35 @@ Integration: Integrates well with a wide range of applications and services, bot
 
 <details>
 <summary>What is Azure Advanced Threat Protection?</summary><br><b>
+
+Azure Advanced Threat Protection (Azure ATP), now rebranded as Microsoft Defender for Identity, is a cloud-based security solution designed to help organizations detect and investigate advanced threats, compromised identities, and malicious insider actions directed at their networks. It leverages on-premises Active Directory signals to identify, detect, and investigate advanced threats across an organization's entire identity infrastructure.
+
+Key Features
+Behavioral Analytics:
+
+Uses machine learning and AI to establish baselines of typical user behavior and detect anomalies.
+Identifies unusual activities such as credential theft, lateral movements, and privilege escalations.
+Security Alerts:
+
+Generates real-time alerts for suspicious activities, including potential attacks and vulnerabilities.
+Alerts are categorized based on severity to help prioritize responses.
+Investigation and Hunting:
+
+Provides a comprehensive timeline of activities for in-depth investigation.
+Enables security analysts to trace attacker steps and understand the full scope of an attack.
+Integration with SIEM and SOAR:
+
+Integrates with Security Information and Event Management (SIEM) systems and Security Orchestration, Automation, and Response (SOAR) tools to enhance threat detection and response capabilities.
+Supports integration with Azure Sentinel for advanced threat hunting and analytics.
+Attack Detection:
+
+Detects specific attack techniques such as Pass-the-Hash, Pass-the-Ticket, and brute force attacks.
+Identifies suspicious modifications in sensitive groups and domain controller activities.
+Reporting and Insights:
+
+Provides detailed reports on identity threats and security posture.
+Offers insights into potential security issues and recommended actions to mitigate risks.
+
 </b></details>
 
 <details>
