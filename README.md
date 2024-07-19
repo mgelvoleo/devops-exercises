@@ -4325,14 +4325,23 @@ spun up and shut down, without you tracking every change in these sources.
 
 <details>
 <summary>You want to run Ansible playbook only on specific minor version of your OS, how would you achieve that?</summary><br><b>
+
+To run an Ansible playbook only on hosts with a specific minor version of your operating system, you can use Ansible's inventory variables and conditionals. Specifically, you would:
+
+Gather Facts: Ensure that Ansible gathers facts about the systems, which include details about the OS version.
+Use when Conditionals: Apply when conditionals in your playbook or roles to restrict execution based on the minor version of the OS.
+
 </b></details>
 
 <details>
 <summary>What the "become" directive used for in Ansible?</summary><br><b>
+The become directive in Ansible is used to escalate privileges and execute tasks with a different user account, typically with elevated privileges such as the root user. This is particularly useful when you need to perform administrative tasks that require higher permissions than the default user running the Ansible playbook.
 </b></details>
 
 <details>
 <summary>What are facts? How to see all the facts of a certain host?</summary><br><b>
+
+n Ansible, facts are system variables that are automatically collected by Ansible when it connects to a host. These facts provide detailed information about the remote system, such as OS type, network interfaces, IP addresses, disk space, memory, and many other properties. Facts are gathered using the setup module and can be used to make playbooks more dynamic and adaptable to different environments.
 </b></details>
 
 <details>
@@ -4368,6 +4377,17 @@ When given a written code, always inspect it thoroughly. If your answer is “th
 
 <details>
 <summary>Which Ansible best practices are you familiar with?. Name at least three</summary><br><b>
+
+Here are three key best practices to follow:
+
+1. Use Roles for Modular and Reusable Code
+Roles allow you to organize your playbooks into reusable components. By grouping related tasks, variables, files, and handlers into roles, you can easily reuse and share your automation scripts.
+
+2. Use Variables and Vault for Configuration Management
+Managing configuration with variables makes your playbooks more flexible and adaptable to different environments. Use group_vars, host_vars, and Ansible Vault for sensitive data.
+
+3. Use Handlers to Manage Service States
+Handlers are special tasks that run when notified by other tasks. They are typically used to manage service states, such as restarting a service when a configuration file changes
 </b></details>
 
 <details>
