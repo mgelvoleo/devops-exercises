@@ -4561,10 +4561,12 @@ tasks:
 
 <details>
 <summary>What is ansible-pull? How is it different from how ansible-playbook works?</summary><br><b>
+ansible-pull is a command in Ansible that reverses the typical "push" model of configuration management into a "pull" model. Instead of a central Ansible control node pushing configurations to managed nodes, each managed node pulls its configuration from a central repository.
 </b></details>
 
 <details>
 <summary>What is Ansible Vault?</summary><br><b>
+Ansible Vault is a feature within Ansible that allows you to securely store and manage sensitive data, such as passwords, API keys, and other confidential information. It enables encryption of entire files or variable values within YAML files, ensuring that sensitive information is not exposed in plain text.
 </b></details>
 
 <details>
